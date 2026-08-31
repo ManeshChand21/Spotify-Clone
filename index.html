@@ -12,9 +12,12 @@
 <body>
     <div class="container flex bg-black">
         <div class="left ">
+            <div class="close">
+                <img src="Resource/close.svg" alt="" class="invert">
+            </div>
             <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo ">
-                    <img src="Resource/logo.svg" alt="" class="invert">
+                    <img src="Resource/logo.svg" alt="" width="150px" class="invert">
                 </div>
                 <ul>
                     <li>
@@ -32,13 +35,13 @@
                 <div class="heading">
                     <img src="Resource/playlist.svg" alt="" class="invert">
                     <h2>Your Library</h2>
-                  
+
                 </div>
-                  <div class="songlist">
+                <div class="songlist">
                     <ul>
-                        
+
                     </ul>
-                    </div>
+                </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
                     <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
@@ -54,6 +57,8 @@
         <div class="right  bg-grey rounded ">
             <div class="header">
                 <div class="nav">
+                    <div class="hamburgerContainer">
+                    <img src="Resource/hamburger.svg" alt="" class="invert hamburger">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
@@ -64,6 +69,7 @@
                             d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
+                    </div>
                 </div>
                 <div class="buttons">
                     <button class="signupbtn">Sign Up</button>
@@ -89,13 +95,17 @@
                     <div class="seekbar">
                         <div class="circle"></div>
                     </div>
+                    <div class="abovebar">
                     <div class="songinfo"></div>
                     <div class="songbuttons">
                         <img id="previous" src="Resource/prevsong.svg" alt="">
                         <img id="play" src="Resource/play.svg" alt="">
                         <img id="next" src="Resource/nextsong.svg" alt="">
                     </div>
-                    <div class="songtime"></div>
+                    <div class="songtime">
+                         
+                    </div>
+                </div>
                 </div>
 
 

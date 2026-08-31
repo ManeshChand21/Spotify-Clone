@@ -125,7 +125,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     max-height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .card {
@@ -184,11 +184,11 @@ body {
 }
 
 .loginbtn:hover {
-    
+
     font-size: 17px;
 }
-.playbar
-{
+
+.playbar {
     height: 39px;
     position: fixed;
     bottom: 30px;
@@ -197,18 +197,19 @@ body {
     width: 70vw;
     padding: 12px 12px;
 }
-.songbuttons
-{
+
+.songbuttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
-.songlist ul{
+
+.songlist ul {
     padding: 0px 12px;
 }
-.songlist ul li
-{
+
+.songlist ul li {
     list-style-type: decimal;
     display: flex;
     justify-content: space-between;
@@ -217,48 +218,48 @@ body {
     border: 1px solid white;
     padding: 12px 0px;
     border-radius: 10px;
-    margin: 12px 0px ;
+    margin: 12px 0px;
     border-radius: 5px;
-    
+
 }
 
-.playnow
-{
+.playnow {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.songlist
-{
+
+.songlist {
     height: 364px;
     overflow: auto;
     margin-bottom: 44px;
 }
-.playnow span
-{
+
+.playnow span {
     font-size: 10px;
     width: 64px;
     padding: 12px;
 }
-.songlist .info
-{
+
+.songlist .info {
     font-size: 13px;
     width: 344px;
 }
-.seekbar
-{
+
+.seekbar {
     height: 2px;
     width: 100%;
     background-color: black;
-    border:2px solid black;
-    position:absolute;
+    border: 2px solid black;
+    position: absolute;
     bottom: 0px;
     border-radius: 10px;
     margin: 6px;
+    cursor: pointer;
 }
-.circle
-{
+
+.circle {
     width: 13px;
     height: 13px;
     border-radius: 13px;
@@ -266,8 +267,67 @@ body {
     position: relative;
     bottom: 6px;
     left: 0px;
-    transition:left 0.5 sec;
+    transition: left 0.5 sec;
 }
-.songbuttons img{
+
+.songbuttons img {
     cursor: pointer;
+}
+
+.songinfo,
+.songtime {
+    color: black;
+    padding: 0px 12px;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+.close
+{
+    display: none;
+}
+
+@media (max-width:1400px) {
+    .left {
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 370px;
+
+
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+    .playbar {
+        width: 95vw;
+    }
+
+    .hamburgerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close {
+        position: absolute;
+        top: 28px;
+        right: 31px;
+        width: 29px;
+        display: inline;
+    }
 }
